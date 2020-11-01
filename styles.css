@@ -1,0 +1,572 @@
+/*
+1. Posicionamiento (position fix, relative, etc)
+2. Modelo de Caja (margin, padding, width, height)
+3. Tipografía (fuentes)
+4. Visuales (shadow-box ; border-radius, etc
+5. Otros
+*/
+
+/* El root que viene abajo son las variables*/
+
+:root{
+    /* Colores */
+    --bitcoin-naranja: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --white: #FFFFFF;
+
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.titulo-head-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+.titulo-head-container h1{
+    font-size: 2.4rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.6rem;
+}
+
+.titulo-head-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+
+.titulo-head-container .boton-header{
+    position: absolute;
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    border-radius: 4px;
+    
+    
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    left: calc(50% - 115px);
+}
+
+.boton-header span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/iconos/flespan.svg');
+    
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.seccion-principal-intercambio{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.container-texto{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.seccion-principal-intercambio .background-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/imagenes/bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-texto h2{
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    height: 2.6rem;
+    color: black;
+}
+
+.container-texto p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.contenedor-tabla-monedas{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.parrafo-monedas{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-naranja);
+}
+
+.contenedor-tabla-principal{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    
+}
+
+.contenedor-tabla-principal table{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-tabla-principal td{
+    width: 50%;
+    line-height: 1.9rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: gray;
+    background-color: white;
+}
+
+.contenedor-tabla-principal .tabla-arriba-izquierda{
+    border-radius: 15px 0 0 0;
+}
+
+.contenedor-tabla-principal .tabla-arriba-derecha{
+    border-radius: 0 15px 0 0;
+}
+
+.contenedor-tabla-principal .tabla_abajo_izquierda{
+    border-radius: 0 0 0 15px;
+}
+
+.contenedor-tabla-principal .tabla_abajo_derecha{
+    border-radius: 0 0 15px 0;
+}
+
+.contenedor-tabla-principal .tabla_derecha{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: grey;
+}
+
+.contenedor-tabla-principal .fleaba{
+    background-image: url('./assets/iconos/flecha-abajo.svg');
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-tabla-principal .flearri{
+    background-image: url('./assets/iconos/flecha-arriba.svg');
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.actualizacion-tabla{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+    
+}
+
+.actualizacion-tabla p{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.creamos{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.creamos .lapapa{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background-image: url('./assets/iconos/papa.svg');
+    top: -10px;
+    left: calc(50% - 20px);
+}
+
+.titulo-producto-creamos{
+   width: 90%;
+   min-width: 288px;
+   height: auto;
+   margin: 0 auto;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.titulo-producto-creamos h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: white;
+}
+
+.titulo-producto-creamos p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: gray;
+}
+
+.tarjetas{
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #282623;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    position: relative;
+}
+
+/* TARJETA 1 */
+
+.tarjetas .icono-chico-reloj{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 14px;
+    margin-bottom: 10px;
+    background-image: url('./assets/iconos/reloj.svg');
+}
+
+.tarjetas .titlo-tarjeta{
+    width: auto;
+    height: 18px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 35px;
+}
+
+.tarjetas .descripcion-tarjeta{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: #808080;
+    width: auto;
+    height: 54px;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+/* TARJETA 2 */
+
+.tarjetas .icono-chico-ojo{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 14px;
+    margin-bottom: 10px;
+    background-image: url('./assets/iconos/ojo.svg');
+}
+
+.tarjetas .titlo-tarjeta-grande{
+    width: auto;
+    height: 18px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 35px;
+}
+
+/* TARJETA 3 */
+
+.tarjetas .icono-chico-peso{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 14px;
+    margin-bottom: 10px;
+    background-image: url('./assets/iconos/signo-peso.svg');
+}
+
+/* TARJETA 4 */
+
+.tarjetas .icono-chico-check{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 14px;
+    margin-bottom: 10px;
+    background-image: url('./assets/iconos/check-circulo.svg');
+}
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/imagenes/chicabitcoin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoin-img-container h2{
+    width: auto;
+    height: 26px;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    padding-top: 50px;
+}
+
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    
+}
+
+.plans--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans--title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.plans-container-card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoin-naranja);
+    border-radius: 8px;
+    color: var(--off-white);
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.2rem;
+    padding: 6px;
+}
+
+.plan-card-title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card-price{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+
+}
+
+.plan-card-price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: super;
+}
+
+.plan-card-saving{
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.plan-card-ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border: 2px solid var(--bitcoin-naranja);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card-ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/iconos/flechaboton.svg');
+    vertical-align: text-bottom;
+}
+
+.plans-section{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    
+} 
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-naranja);
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;    
+}
+
+.left li{
+    margin: 10px 0;
+}
+
+.left a{
+    text-decoration: none;
+    color: white;
+}
